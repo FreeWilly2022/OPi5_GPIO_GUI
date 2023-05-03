@@ -3,7 +3,7 @@ Crude GUI for testing GPIO pins on Orange Pi 5
 
 Toggle on and off GPIO pins on the Orange Pi 5 by clilcking on buttons
 in a window on the screen.
-This program uses the wiringOP and GTK libraries, download per the
+This program uses the wiringOP and GTK libraries, download and install per the
 the instructions on the websites:
 
 https://github.com/orangepi-xunlong/wiringOP
