@@ -5,9 +5,8 @@ the instructions on the websites:
 https://github.com/orangepi-xunlong/wiringOP
 https://www.gtk.org/docs/installations/linux
 
-to compile, from a terminal in the sme directory as this file (delete line breaks in terminal) -
-gcc $( pkg-config --cflags gtk4 ) -o GUItest2 GUItest2.c $( pkg-config --libs
-gtk4 ) -lwiringPi
+to compile, from a terminal in the sme directory as this file -
+gcc $( pkg-config --cflags gtk4 ) -o GUItest2 GUItest2.c $( pkg-config --libs gtk4 ) -lwiringPi
 
 to run, from a terminal -
 sudo ./GUItest2
@@ -16,7 +15,7 @@ to confirm GPIO state, from a separate terminal enter -
 gpio readall
 
 to format enter from a terminal -
-clang-format -i GUItest3.c
+clang-format -i GUItest2.c
 
  */
 
@@ -42,9 +41,8 @@ clang-format -i GUItest3.c
 #define GPIO_PIN_D 4
 #define BUTTON_D "GPIO 4"
 
-
 static void print_GPIOA(GtkWidget *widget, gpointer data)
-
+  
 {
   int GPIO_on;
   GPIO_on = digitalRead(GPIO_PIN_A);
