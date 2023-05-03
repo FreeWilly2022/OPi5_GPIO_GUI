@@ -10,6 +10,8 @@ https://github.com/orangepi-xunlong/wiringOP
 
 https://www.gtk.org/docs/installations/linux
 
+To change GPIO pins you only need to edit the "define" section of the program.  Change the number after each of the GPIO_PIN_A, B, etc to select which pins you want to toggle, and edit the buttons to read whatever makes sense to you.
+
 ```
 To compile, from a terminal in the same directory as this file enter -
 gcc $( pkg-config --cflags gtk4 ) -o GUItest2 GUItest2.c $( pkg-config --libs gtk4 ) -lwiringPi
